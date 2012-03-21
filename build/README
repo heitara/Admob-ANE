@@ -1,0 +1,6 @@
+How to build the ANE ?
+Fist, you should update build.confing file.
+Second, you should have ant installed on your system.
+# Assume that you are using Mac. Otherwise you should you should update the build script accordingly. 
+# A bundled version could be found here: http://lancelotmobile.com/blog/admob-ane
+Finally, open Terminal, navigate to this folder and execute "ant".
