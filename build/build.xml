@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Flint Build Scripts" default="all">
+	
+	<property file="build.config"/>
+	<target name="allOnlyiOS" depends="ios,swcDefault,swc,package" description="Full build of extension"/>	
+	<target name="all" depends="ios,android,swc,swcAndroid,swcDefault,package" description="Full build of extension"/>
+	
+	<target name="android" description="Build Android Library">
+		<echo> Build Android lib step is missing</echo>
+		<echo> Use the .jar instead</echo>
+		
+		<!-- <copy file="../android/jar/GoogleAdMobAdsSdk.jar" todir="../bin/android" overwrite="true"/> -->
+		<copy file="../android/jar/nativeadsane.jar" todir="../bin/android" overwrite="true"/>
+	</target>
+	
+	<target name="ios" description="Build iOS Library">
+		<mkdir dir="../temp/ios/"/>
+		<mkdir dir="../bin/ios/"/>
+
+		<exec executable="xcodebuild" failonerror="true" dir="../ios">
+			<arg line='-project NativeExtensionAds.xcodeproj'/>
+			<arg line='-target NativeExtensionAds'/>
+			<arg line='-configuration Release'/>
+			<arg line='SYMROOT=../temp/ios/'/>
+		</exec>
+		
+		<!--<copy file="../temp/ios/Release-iphoneos/libFlurryIosExtension.a" todir="../bin/ios" overwrite="true"/>
+	-->
+		<copy file="../ios/NativeAds/libNativeExtensionAds.a" todir="../bin/ios" overwrite="true"/>
+		
+		<delete dir="../temp/ios"/>
+	</target>
+		
+	<target name="swc" description="Build iOS swc library">
+		<mkdir dir="../bin/swc/"/>
+		
+		<fileset dir="../actionscript/src" casesensitive="yes" id="classfiles">
+			<include name="**/*.as"/>
+		</fileset>
+
+		<pathconvert property="classlist" refid="classfiles" pathsep=" " dirsep=".">
+			<regexpmapper from=".*src.(.*)\.as" to="\1"/>
+		</pathconvert>
+		
+		<exec executable="${sdk.home}/bin/compc${bin.ext}" failonerror="true">
+			<arg line='-source-path ../actionscript/src'/>
+			<arg line='-output ../bin/swc/${name}.swc'/>
+			<arg line='-swf-version=13'/>
+			<arg line='-external-library-path+="${sdk.home}/frameworks/libs/air/airglobal.swc"'/>
+			<arg line='-include-classes ${classlist}'/>
+		</exec>
+
+		<unzip src="../bin/swc/${name}.swc" dest="../temp/swc" overwrite="true"/>
+		<copy file="../temp/swc/library.swf" todir="../bin/ios" overwrite="true"/>
+		<delete dir="../temp/swc"/>
+	</target>
+	
+	<target name="swcAndroid" description="Build android swc library">
+		<mkdir dir="../bin/swc/"/>
+		
+		<fileset dir="../actionscript/android" casesensitive="yes" id="classfiles">
+			<include name="**/*.as"/>
+		</fileset>
+
+		<pathconvert property="classlist" refid="classfiles" pathsep=" " dirsep=".">
+			<regexpmapper from=".*android.(.*)\.as" to="\1"/>
+		</pathconvert>
+		
+		<exec executable="${sdk.home}/bin/compc${bin.ext}" failonerror="true">
+			<arg line='-source-path ../actionscript/android'/>
+			<arg line='-output ../bin/swc/${name}.swc'/>
+			<arg line='-swf-version=13'/>
+			<arg line='-external-library-path+="${sdk.home}/frameworks/libs/air/airglobal.swc"'/>
+			<arg line='-include-classes ${classlist}'/>
+		</exec>
+
+		<unzip src="../bin/swc/${name}.swc" dest="../temp/swc" overwrite="true"/>
+		<copy file="../temp/swc/library.swf" todir="../bin/android" overwrite="true"/>
+		<delete dir="../temp/swc"/>
+	</target>
+	
+	<target name="swcDefault" description="Build default swc library">
+		<mkdir dir="../bin/swc/"/>
+		
+		<fileset dir="../actionscript/default" casesensitive="yes" id="classfiles">
+			<include name="**/*.as"/>
+		</fileset>
+
+		<pathconvert property="classlist" refid="classfiles" pathsep=" " dirsep=".">
+			<regexpmapper from=".*default.(.*)\.as" to="\1"/>
+		</pathconvert>
+		
+		<exec executable="${sdk.home}/bin/compc${bin.ext}" failonerror="true">
+			<arg line='-source-path ../actionscript/default'/>
+			<arg line='-output ../bin/swc/${name}.swc'/>
+			<arg line='-swf-version=13'/>
+			<arg line='-external-library-path+="${sdk.home}/frameworks/libs/air/airglobal.swc"'/>
+			<arg line='-include-classes ${classlist}'/>
+		</exec>
+
+		<unzip src="../bin/swc/${name}.swc" dest="../temp/swc" overwrite="true"/>
+		<copy file="../temp/swc/library.swf" todir="../bin/default" overwrite="true"/>
+		<delete dir="../temp/swc"/>
+	</target>
+	
+	<target name="package" description="Create the extension package">
+		<exec executable="${sdk.home}/bin/adt${bin.ext}" failonerror="true" dir="../bin">
+			<arg value="-package"/>
+			<arg value="-storetype"/>
+			<arg value="pkcs12"/>
+			<arg value="-keystore"/>
+			<arg value="${keystore.file}"/>
+			<arg value="-storepass"/>
+			<arg value="${keystore.password}"/>
+			<arg value="-target"/>
+			<arg value="ane"/>
+			<arg value="${name}.ane"/>
+			<arg value="../build/extension.xml"/>
+			<arg line="-swc swc/${name}.swc"/>
+			<arg line="-platform iPhone-ARM -C ios/ ."/>
+			<arg line="-platformoptions ../build/ios_platform_options.xml"/>
+			<arg line="-platform Android-ARM -C android/ ."/>
+			<arg line="-platform default -C default/ ."/> 
+		</exec>
+	</target>
+</project>

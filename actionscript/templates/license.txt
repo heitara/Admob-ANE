@@ -1,0 +1,3 @@
+The provided code in this folder is modified from the ASDoc templates provided as part of the Flex SDK.
+It is licensed under the Mozilla Public License 1.1.
+You may obtain a copy of this license here: http://www.mozilla.org/MPL/

@@ -1,0 +1,309 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20046BD4147E97350032506A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20046BD3147E97350032506A /* Foundation.framework */; };
+		20046BDE147E97740032506A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20046BDD147E97740032506A /* UIKit.framework */; };
+		20046BE0147E977F0032506A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20046BDF147E977F0032506A /* AudioToolbox.framework */; };
+		20046BE4147E97980032506A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20046BE3147E97980032506A /* SystemConfiguration.framework */; };
+		20046BE6147E97A20032506A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20046BE5147E97A20032506A /* CoreGraphics.framework */; };
+		20046BEE147E97CA0032506A /* GADBannerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 20046BE7147E97CA0032506A /* GADBannerView.h */; };
+		20046BEF147E97CA0032506A /* GADBannerViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 20046BE8147E97CA0032506A /* GADBannerViewDelegate.h */; };
+		20046BF0147E97CA0032506A /* GADInterstitial.h in Headers */ = {isa = PBXBuildFile; fileRef = 20046BE9147E97CA0032506A /* GADInterstitial.h */; };
+		20046BF1147E97CA0032506A /* GADInterstitialDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 20046BEA147E97CA0032506A /* GADInterstitialDelegate.h */; };
+		20046BF2147E97CA0032506A /* GADRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 20046BEB147E97CA0032506A /* GADRequest.h */; };
+		20046BF3147E97CA0032506A /* GADRequestError.h in Headers */ = {isa = PBXBuildFile; fileRef = 20046BEC147E97CA0032506A /* GADRequestError.h */; };
+		20046BF4147E97CA0032506A /* libGoogleAdMobAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20046BED147E97CA0032506A /* libGoogleAdMobAds.a */; };
+		20046BF7147E99BB0032506A /* FlashRuntimeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 20046BF6147E99BB0032506A /* FlashRuntimeExtensions.h */; };
+		20046C0E147EA06E0032506A /* NativeAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 20046C0C147EA06E0032506A /* NativeAd.m */; };
+		20046C65148067920032506A /* AdHolder.h in Headers */ = {isa = PBXBuildFile; fileRef = 20046C63148067910032506A /* AdHolder.h */; };
+		20046C66148067920032506A /* AdHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 20046C64148067920032506A /* AdHolder.m */; };
+		2012AE3514938E44001DC81A /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20046BE1147E978A0032506A /* MessageUI.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		20046BD0147E97350032506A /* libNativeExtensionAds.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNativeExtensionAds.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		20046BD3147E97350032506A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		20046BD7147E97350032506A /* NativeExtensionAds-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NativeExtensionAds-Prefix.pch"; sourceTree = "<group>"; };
+		20046BDD147E97740032506A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		20046BDF147E977F0032506A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		20046BE1147E978A0032506A /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		20046BE3147E97980032506A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		20046BE5147E97A20032506A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		20046BE7147E97CA0032506A /* GADBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADBannerView.h; sourceTree = "<group>"; };
+		20046BE8147E97CA0032506A /* GADBannerViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADBannerViewDelegate.h; sourceTree = "<group>"; };
+		20046BE9147E97CA0032506A /* GADInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADInterstitial.h; sourceTree = "<group>"; };
+		20046BEA147E97CA0032506A /* GADInterstitialDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADInterstitialDelegate.h; sourceTree = "<group>"; };
+		20046BEB147E97CA0032506A /* GADRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADRequest.h; sourceTree = "<group>"; };
+		20046BEC147E97CA0032506A /* GADRequestError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADRequestError.h; sourceTree = "<group>"; };
+		20046BED147E97CA0032506A /* libGoogleAdMobAds.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAdMobAds.a; sourceTree = "<group>"; };
+		20046BF6147E99BB0032506A /* FlashRuntimeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlashRuntimeExtensions.h; sourceTree = "<group>"; };
+		20046C0C147EA06E0032506A /* NativeAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativeAd.m; sourceTree = "<group>"; };
+		20046C63148067910032506A /* AdHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdHolder.h; sourceTree = "<group>"; };
+		20046C64148067920032506A /* AdHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdHolder.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		20046BCD147E97350032506A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2012AE3514938E44001DC81A /* MessageUI.framework in Frameworks */,
+				20046BE6147E97A20032506A /* CoreGraphics.framework in Frameworks */,
+				20046BE4147E97980032506A /* SystemConfiguration.framework in Frameworks */,
+				20046BE0147E977F0032506A /* AudioToolbox.framework in Frameworks */,
+				20046BDE147E97740032506A /* UIKit.framework in Frameworks */,
+				20046BD4147E97350032506A /* Foundation.framework in Frameworks */,
+				20046BF4147E97CA0032506A /* libGoogleAdMobAds.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20046BC5147E97350032506A = {
+			isa = PBXGroup;
+			children = (
+				20046BD5147E97350032506A /* NativeExtensionAds */,
+				20046BD2147E97350032506A /* Frameworks */,
+				20046BD1147E97350032506A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		20046BD1147E97350032506A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				20046BD0147E97350032506A /* libNativeExtensionAds.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		20046BD2147E97350032506A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20046BE5147E97A20032506A /* CoreGraphics.framework */,
+				20046BE3147E97980032506A /* SystemConfiguration.framework */,
+				20046BE1147E978A0032506A /* MessageUI.framework */,
+				20046BDF147E977F0032506A /* AudioToolbox.framework */,
+				20046BDD147E97740032506A /* UIKit.framework */,
+				20046BD3147E97350032506A /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		20046BD5147E97350032506A /* NativeExtensionAds */ = {
+			isa = PBXGroup;
+			children = (
+				20046BF6147E99BB0032506A /* FlashRuntimeExtensions.h */,
+				20046BF5147E97D20032506A /* GALibrary */,
+				20046BD6147E97350032506A /* Supporting Files */,
+				20046C63148067910032506A /* AdHolder.h */,
+				20046C64148067920032506A /* AdHolder.m */,
+				20046C0C147EA06E0032506A /* NativeAd.m */,
+			);
+			path = NativeExtensionAds;
+			sourceTree = "<group>";
+		};
+		20046BD6147E97350032506A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				20046BD7147E97350032506A /* NativeExtensionAds-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		20046BF5147E97D20032506A /* GALibrary */ = {
+			isa = PBXGroup;
+			children = (
+				20046BE7147E97CA0032506A /* GADBannerView.h */,
+				20046BE8147E97CA0032506A /* GADBannerViewDelegate.h */,
+				20046BE9147E97CA0032506A /* GADInterstitial.h */,
+				20046BEA147E97CA0032506A /* GADInterstitialDelegate.h */,
+				20046BEB147E97CA0032506A /* GADRequest.h */,
+				20046BEC147E97CA0032506A /* GADRequestError.h */,
+				20046BED147E97CA0032506A /* libGoogleAdMobAds.a */,
+			);
+			name = GALibrary;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		20046BCE147E97350032506A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20046BEE147E97CA0032506A /* GADBannerView.h in Headers */,
+				20046BEF147E97CA0032506A /* GADBannerViewDelegate.h in Headers */,
+				20046BF0147E97CA0032506A /* GADInterstitial.h in Headers */,
+				20046BF1147E97CA0032506A /* GADInterstitialDelegate.h in Headers */,
+				20046BF2147E97CA0032506A /* GADRequest.h in Headers */,
+				20046BF3147E97CA0032506A /* GADRequestError.h in Headers */,
+				20046BF7147E99BB0032506A /* FlashRuntimeExtensions.h in Headers */,
+				20046C65148067920032506A /* AdHolder.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		20046BCF147E97350032506A /* NativeExtensionAds */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20046BDA147E97350032506A /* Build configuration list for PBXNativeTarget "NativeExtensionAds" */;
+			buildPhases = (
+				20046BCC147E97350032506A /* Sources */,
+				20046BCD147E97350032506A /* Frameworks */,
+				20046BCE147E97350032506A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NativeExtensionAds;
+			productName = NativeExtensionAds;
+			productReference = 20046BD0147E97350032506A /* libNativeExtensionAds.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		20046BC7147E97350032506A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 20046BCA147E97350032506A /* Build configuration list for PBXProject "NativeExtensionAds" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 20046BC5147E97350032506A;
+			productRefGroup = 20046BD1147E97350032506A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				20046BCF147E97350032506A /* NativeExtensionAds */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		20046BCC147E97350032506A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20046C0E147EA06E0032506A /* NativeAd.m in Sources */,
+				20046C66148067920032506A /* AdHolder.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		20046BD8147E97350032506A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_LINK_WITH_DYNAMIC_LIBRARIES = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		20046BD9147E97350032506A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_LINK_WITH_DYNAMIC_LIBRARIES = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		20046BDB147E97350032506A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = "${SRCROOT}/NativeAds";
+				DSTROOT = /tmp/NativeExtensionAds.dst;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+				GCC_LINK_WITH_DYNAMIC_LIBRARIES = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NativeExtensionAds/NativeExtensionAds-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/NativeExtensionAds\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		20046BDC147E97350032506A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = "${SRCROOT}/NativeAds";
+				DSTROOT = /tmp/NativeExtensionAds.dst;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+				GCC_LINK_WITH_DYNAMIC_LIBRARIES = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NativeExtensionAds/NativeExtensionAds-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/NativeExtensionAds\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		20046BCA147E97350032506A /* Build configuration list for PBXProject "NativeExtensionAds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20046BD8147E97350032506A /* Debug */,
+				20046BD9147E97350032506A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20046BDA147E97350032506A /* Build configuration list for PBXNativeTarget "NativeExtensionAds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20046BDB147E97350032506A /* Debug */,
+				20046BDC147E97350032506A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 20046BC7147E97350032506A /* Project object */;
+}

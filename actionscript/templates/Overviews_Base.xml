@@ -1,0 +1,74 @@
+<!--
+
+	ADOBE SYSTEMS INCORPORATED
+	Copyright 2006 Adobe Systems Incorporated
+	All Rights Reserved.
+
+	NOTICE: Adobe permits you to use, modify, and distribute this file
+	in accordance with the terms of the license agreement accompanying it.
+
+-->
+
+<!-- this file normally should not be edited.  Use the command-line
+     parameters for ASDoc instead -->
+<overviews>
+    <!-- 
+	<all-packages>
+		<description></description>
+	</all-packages>
+	-->
+	<all-classes>
+		<description><![CDATA[Documentation for classes includes syntax, usage information, and code samples for methods, properties, and event handlers and listeners for those APIs that belong to a specific class in ActionScript. The classes are listed alphabetically. If you are not sure to which class a certain method or property belongs, you can look it up in the Index.]]></description>
+	</all-classes>
+	<deprecated>
+		<shortDescription><![CDATA[A list of deprecated items and suggested alternatives when available.]]></shortDescription>
+		<description></description>
+	</deprecated>
+	<packages>
+		<package name="Box2D.Collision">
+			<shortDescription>Contains classes handling detecting collisions.</shortDescription>
+			<description>Contains classes handling detecting collisions.</description>
+			<propertiesDescription></propertiesDescription>
+			<functionsDescription></functionsDescription>
+		</package>
+		<package name="Box2D.Collision.Shapes">
+			<shortDescription>Contains shape classes and corresponding definitions.</shortDescription>
+			<description>Contains shape classes and corresponding definitions.</description>
+			<propertiesDescription></propertiesDescription>
+			<functionsDescription></functionsDescription>
+		</package>
+		<package name="Box2D.Common">
+			<shortDescription>Contains utility functions.</shortDescription>
+			<description>Contains utility functions.</description>
+			<propertiesDescription></propertiesDescription>
+			<functionsDescription></functionsDescription>
+		</package>
+		<package name="Box2D.Common.Math">
+			<shortDescription>Contains 2D vector utilities.</shortDescription>
+			<description>Contains 2D vector utilities.</description>
+			<propertiesDescription></propertiesDescription>
+			<functionsDescription></functionsDescription>
+		</package>
+		<package name="Box2D.Dynamics">
+			<shortDescription>Contains b2World, b2Body and related classes.</shortDescription>
+			<description>Contains b2World, b2Body and related classes.</description>
+			<propertiesDescription></propertiesDescription>
+			<functionsDescription></functionsDescription>
+		</package>
+		<package name="Box2D.Dynamics.Contacts">
+			<shortDescription>Contains classes for tracking contacts between shapes.</shortDescription>
+			<description>Contains classes for tracking contacts between shapes.</description>
+			<propertiesDescription></propertiesDescription>
+			<functionsDescription></functionsDescription>
+		</package>
+		<package name="Box2D.Dynamics.Joints">
+			<shortDescription>Contains joint classes and corresponding definitions.</shortDescription>
+			<description>Contains joint classes and corresponding definitions.</description>
+			<propertiesDescription></propertiesDescription>
+			<functionsDescription></functionsDescription>
+		</package>
+	</packages>
+    <manual-appendix>
+        <shortDescription>AS3 version of the Box2D manual</shortDescription>
+    </manual-appendix>
+</overviews>

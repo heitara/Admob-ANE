@@ -1,0 +1,2 @@
+/Applications/Adobe\ Flash\ Builder\ 4.6/sdks/4.6.0/bin/asdoc -source-path ./src -doc-classes com.hdi.nativeExtensions.NativeAds com.hdi.nativeExtensions.NativeAdsEvent -main-title "AdMob ANE Documentation" -window-title "AdMob ANE Documentation" -output flex-framework-asdoc +configname=airmobile -exclude-dependencies=true -footer "<a href='http://lancelotmobile.com'> All rights reserver 2012 - Lancelotmobile.com </a>" -templates-path ./templates
+# this command should be executed in actionscript folder
