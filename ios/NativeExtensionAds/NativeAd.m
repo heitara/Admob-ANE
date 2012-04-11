@@ -179,7 +179,7 @@ void NADContextInitializer(void* extData, const uint8_t* ctxType, FREContext ctx
 
 
 // ExtInitializer()
-void ExtInitializer(void** extDataToSet, FREContextInitializer* ctxInitializerToSet, 
+void NADExtInitializer(void** extDataToSet, FREContextInitializer* ctxInitializerToSet, 
                     FREContextFinalizer* ctxFinalizerToSet) 
 {    
     *extDataToSet = NULL;
@@ -188,7 +188,7 @@ void ExtInitializer(void** extDataToSet, FREContextInitializer* ctxInitializerTo
 }
 
 // ExtFinalizer()
-void ExtFinalizer(void* extData) {
+void NADExtFinalizer(void* extData) {
     
     // Do Cleanup here.
     return;
