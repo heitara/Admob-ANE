@@ -1,10 +1,11 @@
 <platform xmlns="http://ns.adobe.com/air/extension/3.1">
     <copyright>HDInteractive.com 2012 (o)</copyright>
-    <sdkVersion>5.0</sdkVersion>
+    <sdkVersion>4.0</sdkVersion>
     <linkerOptions>
 	    <!-- to use the Twitter framework -->
-		<option>-ios_version_min 5.0</option> 
+		<option>-ios_version_min 4.0</option> 
         <option>-framework MessageUI</option>
+        <option>-w</option>
 		<!-- to link with the libiconv.dylib -->
 		<!-- <option>-lGoogleAdMobAds</option> -->
     </linkerOptions>

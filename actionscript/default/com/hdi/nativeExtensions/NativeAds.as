@@ -12,6 +12,11 @@ package com.hdi.nativeExtensions
 		private static var _w:int;
 		private static var _h:int;
 		private static var _wasVisible:Boolean = false;
+		
+		public static const BANNER:int                 = 0;
+		public static const IAB_BANNER_468_25:int      = 1;
+		public static const IAB_LEADERBOARD_728_90:int = 2;
+		public static const IAB_MRECT_300_25:int       = 3;
 	
 		/**
 		 * Is the extension supported
@@ -50,7 +55,7 @@ package com.hdi.nativeExtensions
 		/**
 		 * Init ad on a screen, in the specified rectangle
 		 */
-		public static function initAd( x:int, y:int, width:int, height:int ) : void
+		public static function initAd( x:int, y:int, width:int, height:int, bannerType: int = 0 ) : void
 		{
 				trace("[com.hdi.nativeExtensions.NativeAds]"," initAd");
 		}
